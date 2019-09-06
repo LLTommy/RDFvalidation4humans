@@ -1,0 +1,12 @@
+.button1 {background-color: #e7e7e7; color: black;}
+.button2 {background-color: #008CBA;}
+
+#outputfield {
+  width: 800px ;
+  height: 300px ;
+}
+
+#prefix {
+  width: 300px ;
+  height: 80px ;
+}

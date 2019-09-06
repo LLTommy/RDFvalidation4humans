@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+
+  </head>
+  <body>
+    <h1>ShEx Creator</h1>
+    <textarea id="prefix">PREFIX :       <http://example.org/> \n PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#></textarea>
+    <form name="valform">
+            <input type="text" id="focusNode">
+             <label>IS </label>
+            <select id = "type">
+              <option value = "IRI">IRI</option>
+              <option value = "LITERAL">Literal</option>
+              <option value = "BNODE">BNode</option>
+            </select>
+
+          <fieldset id="fieldsetId">
+            having
+            <input type="text" id="propsKey">
+            <select id = "props" onchange="changeFunc();">
+            <option value = "xsd:date">date</option>
+            <option value = "xsd:string">string</option>
+            <option value = "xsd:integer">integer</option>
+            <option value = "ref">Reference</option>
+            </select>
+          </fieldset>
+    </form>
+
+    <!--<button type="button" class="button1" onclick="addProps()">add</button> -->
+    <button type="button" class="button2" onclick="eval()">create</button>
+    <button type="button" class="button3" onclick="callWebservice()">validation</button>
+<br>
+    <p id='feedback'>False</p>
+    <textarea id="outputfield"></textarea>
+
+
+<script type="text/javascript">
+  document.getElementById('focusNode').value = ":User";
+  document.getElementById('propsKey').value=" :Name"
+</script>
+  </body>
+</html>
