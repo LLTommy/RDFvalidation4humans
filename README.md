@@ -15,10 +15,12 @@ Through discussions at the Biohackathon it was decided that a tool helping to cr
 
 
 # Validation Requirements
-https://book.validatingrdf.com/bookHtml009.html
+* https://book.validatingrdf.com/bookHtml009.html
+* http://rdfshape.weso.es:8080/
+
 
 # Links
 * [1] https://book.validatingrdf.com/
 * [2] http://shex.io/
 * [3] https://www.w3.org/TR/shacl/
-* https://spinrdf.org/spin-shacl.html
+* [4] https://spinrdf.org/spin-shacl.html
